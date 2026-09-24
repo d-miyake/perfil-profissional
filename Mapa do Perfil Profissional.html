@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa do Perfil Profissional ✦ Cyber Editorial Zine</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        electric: '#0038ff',
+                        electricDark: '#0025b8',
+                        ink: '#000000',
+                        paper: '#ffffff',
+                        gridBg: '#f0f4ff'
+                    },
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                        display: ['Syne', 'sans-serif'],
+                        mono: ['Space Mono', 'monospace'],
+                        jp: ['Noto Sans JP', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700;900&family=Space+Grotesk:wght@400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Blueprint & Graph Paper Background Pattern */
+        body {
+            background-color: #ffffff;
+            background-image: 
+                linear-gradient(rgba(0, 56, 255, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 56, 255, 0.08) 1px, transparent 1px);
+            background-size: 28px 28px;
+            color: #000000;
+        }
+
+        /* Halftone Dot Texture */
+        .halftone-pattern {
+            background-image: radial-gradient(#0038ff 25%, transparent 25%);
+            background-size: 8px 8px;
+        }
+        .halftone-dark {
+            background-image: radial-gradient(#000000 30%, transparent 30%);
+            background-size: 6px 6px;
+        }
+
+        /* Y2K Neo-Brutalist Shadow Effects */
+        .shadow-pop-black {
+            box-shadow: 6px 6px 0px #000000;
+        }
+        .shadow-pop-electric {
+            box-shadow: 6px 6px 0px #0038ff;
+        }
+        .shadow-pop-white {
+            box-shadow: 6px 6px 0px #ffffff;
+        }
+        .shadow-pop-black-sm {
+            box-shadow: 3px 3px 0px #000000;
+        }
+        .shadow-pop-electric-sm {
+            box-shadow: 3px 3px 0px #0038ff;
+        }
+
+        /* Hover elevation effect */
+        .hover-pop {
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+        }
+        .hover-pop:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0px #000000;
+        }
+        .hover-pop-electric:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0px #0038ff;
+        }
+
+        /* Washi Tape / Tape Sticker styling */
+        .tape-effect {
+            position: relative;
+        }
+        .tape-effect::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-2deg);
+            width: 80px;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px dashed #0038ff;
+            backdrop-filter: blur(2px);
+            z-index: 10;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Decorative barcode styling */
+        .barcode {
+            background: repeating-linear-gradient(
+                90deg,
+                #000000 0px,
+                #000000 2px,
+                transparent 2px,
+                transparent 4px,
+                #000000 4px,
+                #000000 7px
+            );
+            height: 32px;
+            width: 110px;
+        }
+
+        /* Polaroid Frame Cutout */
+        .polaroid-card {
+            background: #ffffff;
+            border: 2px solid #000000;
+            padding: 12px 12px 28px 12px;
+            box-shadow: 6px 6px 0px #0038ff;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #ffffff;
+            border-left: 2px solid #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0038ff;
+            border: 2px solid #000000;
+        }
+
+        /* Floating Stamp Animation */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(2deg); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden selection:bg-electric selection:text-white">
+
+    <!-- TOP GRAPHIC MARQUEE BANNER -->
+    <div class="bg-electric text-white border-b-2 border-black py-2 overflow-hidden select-none">
+        <div class="whitespace-nowrap flex gap-8 items-center text-xs font-mono font-bold tracking-widest animate-marquee">
+            <span>✦ EXPERIMENTAL DELTA // PROFILE MAP ✦ 06 EDITION</span>
+            <span>✦ INFORMÁTICA PARA A INTERNET</span>
+            <span>✦ 実験体Sは青に微笑む</span>
+            <span>✦ RE:FORM INTERACTIVE ZINE</span>
+            <span>✦ MULTITALENTOSA & FAST LEARNER</span>
+            <span>✦ EXPERIMENTAL DELTA // PROFILE MAP ✦ 06 EDITION</span>
+            <span>✦ INFORMÁTICA PARA A INTERNET</span>
+            <span>✦ 実験体Sは青に微笑む</span>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-black py-3 px-4 lg:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            
+            <!-- Logo / Brand Title -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-electric text-white font-display font-black text-xl flex items-center justify-center border-2 border-black shadow-pop-black-sm group-hover:rotate-6 transition-transform">
+                    ✦
+                </div>
+                <div>
+                    <div class="font-display font-black text-lg tracking-tight uppercase leading-none">
+                        三宅| PROFILE <span class="text-electric">ZINE</span>
+                    </div>
+                    <div class="text-[10px] font-mono font-bold text-slate-600 tracking-wider">
+                        VOL.06 // INF. INTERNET
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-2 font-mono text-xs font-bold uppercase">
+                <a href="#quem-sou-eu" class="px-3 py-1.5 border-2 border-transparent hover:border-black hover:bg-electric hover:text-white transition-all">01. Quem Sou Eu</a>
+                <a href="#talentos" class="px-3 py-1.5 border-2 border-transparent hover:border-black hover:bg-electric hover:text-white transition-all">02. Habilidades</a>
+                <a href="#competencias" class="px-3 py-1.5 border-2 border-transparent hover:border-black hover:bg-electric hover:text-white transition-all">03. Tech Aptidões</a>
+                <a href="#matriz" class="px-3 py-1.5 border-2 border-transparent hover:border-black hover:bg-electric hover:text-white transition-all">04. Matriz SWOT</a>
+                <a href="#planos" class="px-3 py-1.5 border-2 border-transparent hover:border-black hover:bg-electric hover:text-white transition-all">05. Plano de Ação</a>
+            </nav>
+
+            <!-- Actions: Interactive Stamp Sticker Toggle & Blueprint Modal Button -->
+            <div class="flex items-center gap-3">
+                <button onclick="toggleInfographicModal()" class="bg-black text-white px-4 py-2 text-xs font-mono font-bold border-2 border-black shadow-pop-electric-sm hover:bg-electric hover:shadow-pop-black transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span class="hidden sm:inline">RESUMO ZINE</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (MANGA GRAPHIC COLLAGE STYLE) -->
+    <section class="relative py-12 lg:py-20 border-b-2 border-black overflow-hidden bg-white">
+        <!-- Watermark Japanese Kanji Overlay -->
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 font-jp text-[120px] lg:text-[220px] font-black text-electric/5 leading-none select-none pointer-events-none pr-4">
+            青に微笑む
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <!-- Left Editorial Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    
+                    <div class="inline-flex items-center gap-2 bg-electric text-white border-2 border-black px-3 py-1 text-xs font-mono font-bold shadow-pop-black-sm">
+                        <span class="animate-ping w-2 h-2 rounded-full bg-white inline-block"></span>
+                         PROFILE MAP ✦ INFOCLASS 2026
+                    </div>
+
+                    <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-7xl uppercase leading-none tracking-tight">
+                        MAPA DO PERFIL <br>
+                        <span class="text-electric bg-black text-white px-3 py-1 inline-block -rotate-1 border-2 border-black shadow-pop-electric mt-1">
+                            PROFISSIONAL
+                        </span>
+                    </h1>
+
+                    <!-- Japanese & English Graphic Caption -->
+                    <div class="flex items-center gap-4 text-xs font-mono border-l-4 border-electric pl-4 py-1 text-slate-800">
+                        <div class="font-jp font-bold text-sm text-electric">プロファイル // 06</div>
+                        <div>
+                            "Uma síntese artística, autêntica e descontraída sobre minhas habilidades, paixões e visão de futuro em Informática para a Internet."
+                        </div>
+                    </div>
+
+                    <!-- Call to action badges -->
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <a href="#quem-sou-eu" class="bg-electric hover:bg-black text-white font-mono font-bold text-sm px-6 py-3 border-2 border-black shadow-pop-black hover-pop transition-all flex items-center gap-2">
+                            <span>EXPLORAR CONTEÚDO</span>
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                        </a>
+
+                        <div class="bg-white border-2 border-black px-4 py-3 font-mono text-xs font-bold flex items-center gap-2 shadow-pop-black-sm">
+                            <span class="text-electric">✦</span>
+                            <span>STATUS: MULTITALENTOSA</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Graphic Tags -->
+                    <div class="pt-4 grid grid-cols-3 gap-3 max-w-lg font-mono text-xs">
+                        <div class="p-2 border-2 border-black bg-gridBg text-center">
+                            <div class="text-[10px] text-slate-500 font-bold">ESPORTE</div>
+                            <div class="font-bold text-electric">🏐 VÔLEI</div>
+                        </div>
+                        <div class="p-2 border-2 border-black bg-gridBg text-center">
+                            <div class="text-[10px] text-slate-500 font-bold">EXPRESSÃO</div>
+                            <div class="font-bold text-black">🎨 PINTURA</div>
+                        </div>
+                        <div class="p-2 border-2 border-black bg-gridBg text-center">
+                            <div class="text-[10px] text-slate-500 font-bold">LOGIC</div>
+                            <div class="font-bold text-electric">⚡ QUICK GAME</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Collage Column (Directly Inspired by Reference Images) -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    
+                    <!-- Collage Stack Outer Box -->
+                    <div class="relative w-full max-w-md">
+
+                        <!-- Main Blue Block (Image 2 style) -->
+                        <div class="absolute -top-6 -left-6 w-full h-full bg-electric border-2 border-black shadow-pop-black"></div>
+
+                        <!-- Main Polaroid Photo Frame (Image 1 style) -->
+                        <div class="polaroid-card relative rotate-2 hover:rotate-0 transition-transform duration-300 z-10">
+                            <!-- Graphic Image Canvas Simulation -->
+                            <div class="h-64 sm:h-72 bg-slate-900 border-2 border-black relative overflow-hidden flex flex-col justify-between p-4 text-white">
+                                <!-- Halftone Sky Graphic with Cloud effect -->
+                                <div class="absolute inset-0 bg-gradient-to-br from-electric via-blue-700 to-black opacity-90"></div>
+                                
+                                <!-- Halftone dots overlay -->
+                                <div class="absolute inset-0 halftone-pattern opacity-30"></div>
+
+                                <!-- Overlay Graphics (Sunflower & Stars SVG simulation) -->
+                                <div class="relative z-10 flex justify-between items-start">
+                                    <span class="font-mono text-xs font-bold bg-black text-white px-2 py-0.5 border border-white">
+                                        #06 RE:FORM
+                                    </span>
+                                    <span class="text-3xl text-white">✦</span>
+                                </div>
+
+                                <!-- Center Manga Pop Text Graphic -->
+                                <div class="relative z-10 text-center my-auto">
+                                    <div class="font-jp text-2xl font-black text-white tracking-widest drop-shadow-[2px_2px_0px_#000]">
+                                        実験体Sは青に微笑む
+                                    </div>
+                                    <div class="font-mono text-[10px] text-blue-200 mt-1 uppercase tracking-widest">
+                                        INFORMÁTICA PARA A INTERNET ✦ 2026
+                                    </div>
+                                </div>
+
+                                <!-- Bottom Barcode & Icons -->
+                                <div class="relative z-10 flex justify-between items-end">
+                                    <div class="barcode bg-white p-1 rounded-none"></div>
+                                    <div class="font-display text-4xl font-black text-white">06</div>
+                                </div>
+                            </div>
+
+                            <!-- Polaroid Footer Caption -->
+                            <div class="mt-3 flex justify-between items-center font-mono text-xs font-bold text-black">
+                                <span>MAPA DE PERFIL // COLLAGE</span>
+                                <span class="text-electric">✦✦✦</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Manga Speech Bubble Graphic -->
+                        <div class="absolute -bottom-6 -right-4 bg-white border-2 border-black p-3 shadow-pop-black font-display font-black text-xl text-black z-20 animate-float">
+                            <span class="text-electric">"</span>APRENDO RÁPIDO!<span class="text-electric">"</span>
+                        </div>
+
+                        <!-- Floating Star Graphic -->
+                        <div class="absolute -top-10 -right-6 text-electric text-5xl font-black z-20 select-none">
+                            ✦
+                        </div>
+
+                        <!-- Question Mark Bubble -->
+                        <div class="absolute bottom-12 -left-8 w-12 h-12 bg-black text-white border-2 border-black flex items-center justify-center font-display font-black text-2xl shadow-pop-electric z-20 -rotate-12">
+                            ?
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: QUEM SOU EU? (ETAPA 1) -->
+    <section id="quem-sou-eu" class="py-16 border-b-2 border-black bg-gridBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 border-b-2 border-black pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-black text-white font-display font-black text-2xl flex items-center justify-center border-2 border-black shadow-pop-electric-sm">
+                        01
+                    </div>
+                    <div>
+                        <span class="text-xs font-mono font-bold text-electric uppercase tracking-widest">ETAPA 01 // AUTOCONHECIMENTO</span>
+                        <h2 class="font-display font-black text-3xl sm:text-4xl uppercase">QUEM SOU EU?</h2>
+                    </div>
+                </div>
+                <div class="font-mono text-xs font-bold bg-white border-2 border-black px-3 py-1 self-start sm:self-auto">
+                    STATUS: REFLEXÃO PESSOAL ✦
+                </div>
+            </div>
+
+            <!-- 3 Main Cards Grid (Polaroid / Scrapbook Tilted Cards) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                
+                <!-- Card A: O que gosto de fazer -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black tape-effect hover-pop -rotate-1">
+                    <div class="flex items-center justify-between border-b-2 border-black pb-3 mb-4">
+                        <span class="font-mono text-xs font-bold text-electric">01.1 // PAIXÕES</span>
+                        <i class="fa-solid fa-heart text-electric text-lg"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl uppercase mb-4">3 Coisas que gosto de fazer</h3>
+                    <ul class="space-y-3 font-mono text-sm">
+                        <li class="flex items-start gap-2 bg-slate-50 border border-black p-2">
+                            <span class="text-electric font-bold">✦</span>
+                            <span><strong>Vôlei:</strong> Esporte dinâmico e trabalho em equipe.</span>
+                        </li>
+                        <li class="flex items-start gap-2 bg-slate-50 border border-black p-2">
+                            <span class="text-electric font-bold">✦</span>
+                            <span><strong>Pintar:</strong> Expressão visual, cores e criatividade.</span>
+                        </li>
+                        <li class="flex items-start gap-2 bg-slate-50 border border-black p-2">
+                            <span class="text-electric font-bold">✦</span>
+                            <span><strong>Jogos On-line:</strong> Estratégia, desafio e diversão.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card B: Atividades com facilidade -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-electric tape-effect hover-pop rotate-1">
+                    <div class="flex items-center justify-between border-b-2 border-black pb-3 mb-4">
+                        <span class="font-mono text-xs font-bold text-black">01.2 // FACILIDADES</span>
+                        <i class="fa-solid fa-bolt text-black text-lg"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl uppercase mb-4">Realizo com facilidade</h3>
+                    <ul class="space-y-3 font-mono text-sm">
+                        <li class="flex items-start gap-2 bg-blue-50 border border-black p-2">
+                            <span class="text-black font-bold">⚡</span>
+                            <span>Aprender mecânicas de jogos com facilidade.</span>
+                        </li>
+                        <li class="flex items-start gap-2 bg-blue-50 border border-black p-2">
+                            <span class="text-black font-bold">⚡</span>
+                            <span>Contas de matemática e raciocínio rápido.</span>
+                        </li>
+                        <li class="flex items-start gap-2 bg-blue-50 border border-black p-2">
+                            <span class="text-black font-bold">⚡</span>
+                            <span>Esportes em geral.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card C: O que gostaria de aprender -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black tape-effect hover-pop -rotate-1">
+                    <div class="flex items-center justify-between border-b-2 border-black pb-3 mb-4">
+                        <span class="font-mono text-xs font-bold text-electric">01.3 // METAS FUTURAS</span>
+                        <i class="fa-solid fa-graduation-cap text-electric text-lg"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl uppercase mb-4">Gostaria de Aprender</h3>
+                    <ul class="space-y-3 font-mono text-sm">
+                        <li class="flex items-start gap-2 bg-slate-50 border border-black p-2">
+                            <span class="text-electric font-bold">🎯</span>
+                            <span>Tirar fotos com estética e técnica.</span>
+                        </li>
+                        <li class="flex items-start gap-2 bg-slate-50 border border-black p-2">
+                            <span class="text-electric font-bold">🎯</span>
+                            <span>Editar vídeos da cultura geek.</span>
+                        </li>
+                        <li class="flex items-start gap-2 bg-slate-50 border border-black p-2">
+                            <span class="text-electric font-bold">🎯</span>
+                            <span>Fazer e estilizar unhas.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Highlights Row: Superação & Tempo/Qualidades -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                
+                <!-- Superação Box (Large Badge) -->
+                <div class="md:col-span-7 bg-electric text-white border-2 border-black p-6 shadow-pop-black relative overflow-hidden">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="bg-black text-white text-xs font-mono font-bold px-2 py-0.5 border border-white">
+                            SITUAÇÃO DE SUPERAÇÃO
+                        </span>
+                        <span class="text-xl">✦</span>
+                    </div>
+                    <h4 class="font-display font-extrabold text-2xl uppercase mb-2">Superando Obstáculos</h4>
+                    <p class="font-mono text-sm leading-relaxed text-blue-100 bg-black/20 p-4 border border-white/30">
+                        "Consegui superar uma dificuldade quando terminei uma amizade muito próxima com o meu amigo. Foi um momento de aprendizado, maturação e resiliência pessoal."
+                    </p>
+                </div>
+
+                <!-- Highlight Badges (Right Column) -->
+                <div class="md:col-span-5 space-y-4">
+                    
+                    <!-- Perde a noção do tempo -->
+                    <div class="bg-white border-2 border-black p-4 shadow-pop-electric flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] font-mono font-bold text-slate-500 uppercase">ATIVIDADE QUE FAZ PERDER A NOÇÃO DO TEMPO</span>
+                            <div class="font-display font-extrabold text-xl text-black">🏐 VÔLEI (Imersão Total)</div>
+                        </div>
+                        <div class="text-3xl text-electric font-black">!</div>
+                    </div>
+
+                    <!-- Característica Positiva -->
+                    <div class="bg-black text-white border-2 border-black p-4 shadow-pop-black flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] font-mono font-bold text-electric uppercase">CARACTERÍSTICA POSITIVA PRINCIPAL</span>
+                            <div class="font-display font-extrabold text-xl text-white">⚡ APRENDO AS COISAS RÁPIDO</div>
+                        </div>
+                        <div class="text-3xl text-white font-black">✦</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: MEUS TALENTOS E HABILIDADES (ETAPA 2) -->
+    <section id="talentos" class="py-16 border-b-2 border-black bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 border-b-2 border-black pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-electric text-white font-display font-black text-2xl flex items-center justify-center border-2 border-black shadow-pop-black">
+                        02
+                    </div>
+                    <div>
+                        <span class="text-xs font-mono font-bold text-electric uppercase tracking-widest">ETAPA 02 // MAPEAMENTO DE TALENTOS</span>
+                        <h2 class="font-display font-black text-3xl sm:text-4xl uppercase">TALENTOS & HABILIDADES</h2>
+                    </div>
+                </div>
+                <div class="font-mono text-xs font-bold bg-black text-white px-3 py-1">
+                    STATUS: RECONHECIMENTO ✦
+                </div>
+            </div>
+
+            <!-- Interactive 8 Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- 1. Algo que faço bem -->
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black hover-pop transition-all group">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-black text-white px-2 py-0.5">CATEGORIA 01</span>
+                        <i class="fa-solid fa-volleyball text-electric text-xl group-hover:scale-125 transition-transform"></i>
+                    </div>
+                    <div class="text-xs font-mono text-slate-500 font-bold uppercase">Algo que faço bem</div>
+                    <div class="font-display font-extrabold text-xl text-black mt-1 uppercase">Vôlei</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2 border-t border-black/10 pt-2">
+                        Execução esportiva, noção de espaço e trabalho coordenado em equipe.
+                    </p>
+                </div>
+
+                <!-- 2. Algo que aprendo rapidamente -->
+                <div class="bg-blue-50 border-2 border-black p-5 shadow-pop-electric hover-pop transition-all group">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-electric text-white px-2 py-0.5">CATEGORIA 02</span>
+                        <i class="fa-solid fa-gamepad text-black text-xl group-hover:scale-125 transition-transform"></i>
+                    </div>
+                    <div class="text-xs font-mono text-black font-bold uppercase">Aprendo rapidamente</div>
+                    <div class="font-display font-extrabold text-xl text-electric mt-1 uppercase">Mecânicas de Jogos</div>
+                    <p class="font-mono text-xs text-slate-700 mt-2 border-t border-black/10 pt-2">
+                        Compreensão instantânea de regras virtuais, controles e dinâmicas online.
+                    </p>
+                </div>
+
+                <!-- 3. Habilidade técnica -->
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black hover-pop transition-all group">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-black text-white px-2 py-0.5">CATEGORIA 03</span>
+                        <i class="fa-solid fa-video text-electric text-xl group-hover:scale-125 transition-transform"></i>
+                    </div>
+                    <div class="text-xs font-mono text-slate-500 font-bold uppercase">Habilidade Técnica</div>
+                    <div class="font-display font-extrabold text-xl text-black mt-1 uppercase">Edição de Vídeos</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2 border-t border-black/10 pt-2">
+                        Edição de vídeos curtos para redes sociais e conteúdos dinâmicos.
+                    </p>
+                </div>
+
+                <!-- 4. Habilidade de comunicação -->
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black hover-pop transition-all group">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-black text-white px-2 py-0.5">CATEGORIA 04</span>
+                        <i class="fa-solid fa-comments text-electric text-xl group-hover:scale-125 transition-transform"></i>
+                    </div>
+                    <div class="text-xs font-mono text-slate-500 font-bold uppercase">Comunicação</div>
+                    <div class="font-display font-extrabold text-xl text-black mt-1 uppercase">Clima Leve</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2 border-t border-black/10 pt-2">
+                        Comunico-me bem e mantenho o clima leve, encorajando o time na quadra.
+                    </p>
+                </div>
+
+                <!-- 5. Habilidade de criatividade -->
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black hover-pop transition-all group">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-black text-white px-2 py-0.5">CATEGORIA 05</span>
+                        <i class="fa-solid fa-paintbrush text-electric text-xl group-hover:scale-125 transition-transform"></i>
+                    </div>
+                    <div class="text-xs font-mono text-slate-500 font-bold uppercase">Criatividade</div>
+                    <div class="font-display font-extrabold text-xl text-black mt-1 uppercase">Pintar</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2 border-t border-black/10 pt-2">
+                        Estética visual, harmonização de cores e expressão artística original.
+                    </p>
+                </div>
+
+                <!-- 6. Habilidade de organização -->
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black hover-pop transition-all group">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-black text-white px-2 py-0.5">CATEGORIA 06</span>
+                        <i class="fa-solid fa-book text-electric text-xl group-hover:scale-125 transition-transform"></i>
+                    </div>
+                    <div class="text-xs font-mono text-slate-500 font-bold uppercase">Organização</div>
+                    <div class="font-display font-extrabold text-xl text-black mt-1 uppercase">Caderno Organizado</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2 border-t border-black/10 pt-2">
+                        Meu caderno e anotações são sempre estruturados com ordem e clareza.
+                    </p>
+                </div>
+
+                <!-- 7. Habilidade de tecnologia -->
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black hover-pop transition-all group">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-black text-white px-2 py-0.5">CATEGORIA 07</span>
+                        <i class="fa-solid fa-laptop-code text-electric text-xl group-hover:scale-125 transition-transform"></i>
+                    </div>
+                    <div class="text-xs font-mono text-slate-500 font-bold uppercase">Tecnologia</div>
+                    <div class="font-display font-extrabold text-xl text-black mt-1 uppercase">Adaptação Digital</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2 border-t border-black/10 pt-2">
+                        Aprendo rápido a mexer em aplicativos, novos softwares ou jogos.
+                    </p>
+                </div>
+
+                <!-- 8. O que outras pessoas reconhecem em mim -->
+                <div class="bg-electric text-white border-2 border-black p-5 shadow-pop-black hover-pop transition-all group relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="text-[10px] font-mono font-bold bg-white text-black px-2 py-0.5">RECONHECIMENTO</span>
+                        <span class="text-2xl text-white">✦</span>
+                    </div>
+                    <div class="text-xs font-mono text-blue-200 font-bold uppercase">Outros reconhecem</div>
+                    <div class="font-display font-black text-2xl text-white mt-1 uppercase tracking-tight">
+                        MULTITALENTOSA
+                    </div>
+                    <p class="font-mono text-xs text-blue-100 mt-2 border-t border-white/20 pt-2">
+                        Habilidade de se destacar em múltiplas áreas com facilidade natural.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: COMPETÊNCIAS E APTIDÕES EM INFORMÁTICA PARA A INTERNET -->
+    <section id="competencias" class="py-16 border-b-2 border-black bg-gridBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 border-b-2 border-black pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-black text-white font-display font-black text-2xl flex items-center justify-center border-2 border-black shadow-pop-electric">
+                        03
+                    </div>
+                    <div>
+                        <span class="text-xs font-mono font-bold text-electric uppercase tracking-widest">ETAPA 03 // APLICAÇÃO PRÁTICA TECH</span>
+                        <h2 class="font-display font-black text-3xl sm:text-4xl uppercase">COMPETÊNCIAS & INFORMÁTICA</h2>
+                    </div>
+                </div>
+                <div class="font-mono text-xs font-bold bg-electric text-white px-3 py-1">
+                    ÁREA: INFORMÁTICA PARA INTERNET ✦
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Competência 1: Criatividade -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black relative">
+                    <div class="flex items-center justify-between mb-4 border-b-2 border-black pb-2">
+                        <span class="font-display font-black text-lg text-black uppercase">01 // CRIATIVIDADE</span>
+                        <span class="text-xs font-mono font-bold bg-electric text-white px-2 py-0.5">WEB DESIGN</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-electric mb-2 uppercase">Sites Interativos & Atraentes</h3>
+                    <p class="font-mono text-sm text-slate-800 leading-relaxed">
+                        Aplica a veia artística da pintura para <strong>criar sites interativos e interessantes</strong> para o público, elevando o visual das páginas.
+                    </p>
+                </div>
+
+                <!-- Competência 2: Organização -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black relative">
+                    <div class="flex items-center justify-between mb-4 border-b-2 border-black pb-2">
+                        <span class="font-display font-black text-lg text-black uppercase">02 // ORGANIZAÇÃO</span>
+                        <span class="text-xs font-mono font-bold bg-black text-white px-2 py-0.5">CLEAN CODE</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-black mb-2 uppercase">Estruturação de Código</h3>
+                    <p class="font-mono text-sm text-slate-800 leading-relaxed">
+                        Transfere o hábito de cadernos impecáveis para a <strong>organização em códigos</strong>, facilitando a leitura e a compreensão de outros devs.
+                    </p>
+                </div>
+
+                <!-- Competência 3: Comunicação -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black relative">
+                    <div class="flex items-center justify-between mb-4 border-b-2 border-black pb-2">
+                        <span class="font-display font-black text-lg text-black uppercase">03 // COMUNICAÇÃO</span>
+                        <span class="text-xs font-mono font-bold bg-electric text-white px-2 py-0.5">EQ & SOFT SKILLS</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-electric mb-2 uppercase">Controle de Situações</h3>
+                    <p class="font-mono text-sm text-slate-800 leading-relaxed">
+                        Falo de forma calma e tento manter o <strong>máximo de controle das situações</strong>, garantindo estabilidade no time de desenvolvimento.
+                    </p>
+                </div>
+
+                <!-- Competência 4: Raciocínio Lógico -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black relative">
+                    <div class="flex items-center justify-between mb-4 border-b-2 border-black pb-2">
+                        <span class="font-display font-black text-lg text-black uppercase">04 // RACIOCÍNIO LÓGICO</span>
+                        <span class="text-xs font-mono font-bold bg-black text-white px-2 py-0.5">ALGORITMOS</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-black mb-2 uppercase">Resolução Matemática</h3>
+                    <p class="font-mono text-sm text-slate-800 leading-relaxed">
+                        Aproveita a facilidade com matemática para <strong>resolver problemas matemáticos</strong> e regras lógicas complexas nos códigos.
+                    </p>
+                </div>
+
+                <!-- Competência 5: Curiosidade -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black relative">
+                    <div class="flex items-center justify-between mb-4 border-b-2 border-black pb-2">
+                        <span class="font-display font-black text-lg text-black uppercase">05 // CURIOSIDADE</span>
+                        <span class="text-xs font-mono font-bold bg-electric text-white px-2 py-0.5">RESEARCH</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-electric mb-2 uppercase">Pesquisa Proativa</h3>
+                    <p class="font-mono text-sm text-slate-800 leading-relaxed">
+                        Autonomia constante: <strong>sempre pesquisando o que preciso no Google</strong> ou em outras plataformas para encontrar respostas rapidamente.
+                    </p>
+                </div>
+
+                <!-- Competência 6: Trabalho em Equipe -->
+                <div class="bg-white border-2 border-black p-6 shadow-pop-black relative">
+                    <div class="flex items-center justify-between mb-4 border-b-2 border-black pb-2">
+                        <span class="font-display font-black text-lg text-black uppercase">06 // TRABALHO EM EQUIPE</span>
+                        <span class="text-xs font-mono font-bold bg-black text-white px-2 py-0.5">TEAMWORK</span>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-black mb-2 uppercase">Divisão Justa de Tarefas</h3>
+                    <p class="font-mono text-sm text-slate-800 leading-relaxed">
+                        Visão coletiva herdada dos esportes: <strong>tento dividir ao máximo as tarefas</strong>, para que o trabalho não fique pesado para ninguém.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: MATRIZ PESSOAL / FORÇAS X OPORTUNIDADES (ETAPA 4) -->
+    <section id="matriz" class="py-16 border-b-2 border-black bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 border-b-2 border-black pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-electric text-white font-display font-black text-2xl flex items-center justify-center border-2 border-black shadow-pop-black">
+                        04
+                    </div>
+                    <div>
+                        <span class="text-xs font-mono font-bold text-electric uppercase tracking-widest">ETAPA 04 // ANÁLISE DE MATRIZ PESSOAL</span>
+                        <h2 class="font-display font-black text-3xl sm:text-4xl uppercase">FORÇAS & DESENVOLVIMENTO</h2>
+                    </div>
+                </div>
+                <div class="font-mono text-xs font-bold bg-black text-white px-3 py-1">
+                    ANÁLISE ESTRATÉGICA ✦
+                </div>
+            </div>
+
+            <!-- Two Main Columns: Forças vs Oportunidades -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- LEFT BOX: MINHAS FORÇAS -->
+                <div class="bg-black text-white border-2 border-black p-6 sm:p-8 shadow-pop-electric relative">
+                    <div class="flex items-center justify-between border-b-2 border-white/20 pb-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-electric text-white font-display font-black flex items-center justify-center border border-white">✦</span>
+                            <h3 class="font-display font-black text-2xl uppercase">MINHAS FORÇAS</h3>
+                        </div>
+                        <span class="font-mono text-xs text-electric font-bold bg-white px-2 py-0.5">PONTOS FORTES</span>
+                    </div>
+
+                    <div class="space-y-6 font-mono text-sm">
+                        
+                        <div class="bg-white/10 p-4 border border-white/20">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">O que faço bem?</span>
+                            <div class="text-white font-bold text-base">
+                                "Consigo jogar bem todos os esportes."
+                            </div>
+                        </div>
+
+                        <div class="bg-white/10 p-4 border border-white/20">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">O que me diferencia?</span>
+                            <div class="text-white font-bold text-base">
+                                "Sou mediana em tudo, não sou ruim e nem a melhor." <span class="text-xs text-slate-300 font-normal">(Alta versatilidade e adaptabilidade)</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white/10 p-4 border border-white/20">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">Situações de Confiança?</span>
+                            <div class="text-white font-bold text-base">
+                                "Quando estou falando em inglês."
+                            </div>
+                        </div>
+
+                        <div class="bg-white/10 p-4 border border-white/20">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">Habilidade a utilizar a meu favor?</span>
+                            <div class="text-white font-bold text-base">
+                                "Minha criatividade."
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT BOX: OPORTUNIDADES DE DESENVOLVIMENTO -->
+                <div class="bg-white text-black border-2 border-black p-6 sm:p-8 shadow-pop-black relative">
+                    <div class="flex items-center justify-between border-b-2 border-black pb-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <span class="w-8 h-8 bg-black text-white font-display font-black flex items-center justify-center border border-black">✦</span>
+                            <h3 class="font-display font-black text-2xl uppercase">DESENVOLVIMENTO</h3>
+                        </div>
+                        <span class="font-mono text-xs text-white font-bold bg-electric px-2 py-0.5">A MELHORAR</span>
+                    </div>
+
+                    <div class="space-y-6 font-mono text-sm">
+                        
+                        <div class="bg-slate-50 p-4 border border-black">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">O que preciso melhorar?</span>
+                            <div class="text-black font-bold text-base">
+                                "O vôlei e a minha comunicação fora da quadra."
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 border border-black">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">Conhecimento a adquirir?</span>
+                            <div class="text-black font-bold text-base">
+                                "De linguagem de programação."
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 border border-black">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">Comportamento a desenvolver?</span>
+                            <div class="text-black font-bold text-base">
+                                "A minha comunicação com desconhecidos."
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 p-4 border border-black">
+                            <span class="text-xs text-electric font-bold uppercase block mb-1">Quem / O que pode me ajudar?</span>
+                            <div class="text-black font-bold text-base">
+                                "Meus instrutores e a internet."
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: SONHOS TRANSFORMADOS EM PLANOS (ETAPA 5) -->
+    <section id="planos" class="py-16 border-b-2 border-black bg-gridBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 border-b-2 border-black pb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-black text-white font-display font-black text-2xl flex items-center justify-center border-2 border-black shadow-pop-electric">
+                        05
+                    </div>
+                    <div>
+                        <span class="text-xs font-mono font-bold text-electric uppercase tracking-widest">ETAPA 05 // PLANO DE CARREIRA E FUTURO</span>
+                        <h2 class="font-display font-black text-3xl sm:text-4xl uppercase">SONHOS EM PLANOS</h2>
+                    </div>
+                </div>
+                <div class="font-mono text-xs font-bold bg-white border-2 border-black px-3 py-1">
+                    GOAL: VIDA TRANQUILA TECH ✦
+                </div>
+            </div>
+
+            <!-- Main Big Goal Banner -->
+            <div class="bg-electric text-white border-2 border-black p-8 shadow-pop-black mb-12 relative overflow-hidden">
+                <div class="absolute -right-8 -bottom-8 font-jp text-9xl font-black opacity-10 select-none pointer-events-none">
+                    未来
+                </div>
+                <div class="max-w-3xl relative z-10">
+                    <span class="bg-black text-white text-xs font-mono font-bold px-3 py-1 border border-white">
+                        OBJETIVO PROFISSIONAL PRINCIPAL
+                    </span>
+                    <h3 class="font-display font-black text-2xl sm:text-4xl uppercase mt-4 mb-3 leading-snug">
+                        "Receber uma boa quantia para conseguir viver uma vida tranquila, e trabalhar com o que gosto."
+                    </h3>
+                    <div class="font-mono text-sm text-blue-100 bg-black/30 p-4 border border-white/30 inline-block">
+                        <strong>POR QUE É IMPORTANTE?</strong> "Para eu viver bem e feliz ao mesmo tempo!"
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step-by-Step Questions Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black">
+                    <div class="text-xs font-mono font-bold text-electric uppercase mb-1">01. O QUE PRECISO APRENDER?</div>
+                    <div class="font-display font-bold text-lg text-black">Investir dinheiro</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2">Educação financeira para sustentar a tranquilidade no futuro.</p>
+                </div>
+
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black">
+                    <div class="text-xs font-mono font-bold text-electric uppercase mb-1">02. HABILIDADE A DESENVOLVER?</div>
+                    <div class="font-display font-bold text-lg text-black">Habilidade de Comunicação</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2">Aprimorar o diálogo interpessoal e desinibição fora de quadra.</p>
+                </div>
+
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black">
+                    <div class="text-xs font-mono font-bold text-electric uppercase mb-1">03. RECURSOS A BUSCAR?</div>
+                    <div class="font-display font-bold text-lg text-black">Materiais de estudo</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2">Livros, documentações, cursos e conteúdos técnicos.</p>
+                </div>
+
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black">
+                    <div class="text-xs font-mono font-bold text-electric uppercase mb-1">04. QUEM PODE ME AJUDAR?</div>
+                    <div class="font-display font-bold text-lg text-black">Profissionais experientes</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2">Mentores do setor, instrutores e professores.</p>
+                </div>
+
+                <div class="bg-black text-white border-2 border-black p-5 shadow-pop-electric">
+                    <div class="text-xs font-mono font-bold text-electric uppercase mb-1">05. PRIMEIRA AÇÃO CONCRETA?</div>
+                    <div class="font-display font-bold text-lg text-white">Entrar em uma faculdade boa</div>
+                    <p class="font-mono text-xs text-slate-300 mt-2">Foco total no encerramento do curso e no vestibular.</p>
+                </div>
+
+                <div class="bg-white border-2 border-black p-5 shadow-pop-black">
+                    <div class="text-xs font-mono font-bold text-electric uppercase mb-1">06. QUANDO PRENTENDO REALIZÁ-LA?</div>
+                    <div class="font-display font-bold text-lg text-black">1 a 2 anos pós-faculdade</div>
+                    <p class="font-mono text-xs text-slate-600 mt-2">Prazo estipulado para a consolidação profissional inicial.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MODAL DE RESUMO INFOGRÁFICO ZINE -->
+    <div id="infographicModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white border-4 border-black max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-pop-electric relative">
+            
+            <div class="flex justify-between items-center border-b-2 border-black pb-4 mb-6">
+                <div>
+                    <span class="text-xs font-mono font-bold bg-electric text-white px-2 py-0.5">SUMMARY ZINE</span>
+                    <h3 class="font-display font-black text-2xl uppercase">INFOGRÁFICO RESUMIDO</h3>
+                </div>
+                <button onclick="toggleInfographicModal()" class="w-10 h-10 bg-black text-white border-2 border-black hover:bg-electric text-xl flex items-center justify-center font-bold">
+                    ✕
+                </button>
+            </div>
+
+            <div class="space-y-6 font-mono text-sm">
+                
+                <div class="p-4 bg-blue-50 border-2 border-black">
+                    <h4 class="font-bold text-black uppercase mb-1">✦ IDENTIDADE & SUPERPODER</h4>
+                    <p class="text-slate-800">
+                        Estudante de Informática para a Internet multitalentosa. Destaque por aprender mecânicas de jogos e novos softwares muito rápido, raciocínio matemático refinado e veia artística (pintura/edição).
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 border-2 border-black bg-white">
+                        <span class="text-xs font-bold text-electric">O QUE FAÇO BEM</span>
+                        <div class="font-bold text-black mt-1">Jogar esportes (Vôlei), pintar e resolução lógica.</div>
+                    </div>
+                    <div class="p-4 border-2 border-black bg-white">
+                        <span class="text-xs font-bold text-electric">DIFERENCIAL</span>
+                        <div class="font-bold text-black mt-1">Perfil mediano e versátil + Inglês confiante.</div>
+                    </div>
+                </div>
+
+                <div class="p-4 bg-black text-white border-2 border-black">
+                    <h4 class="font-bold text-electric uppercase mb-1">✦ META DE CARREIRA</h4>
+                    <p class="text-slate-200">
+                        Ingressar em uma excelente faculdade, aprofundar linguagens de programação, aprender investimentos e conquistar estabilidade financeira para ter uma vida tranquila e feliz.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="mt-8 pt-4 border-t-2 border-black flex flex-wrap justify-between items-center gap-4">
+                <div class="barcode"></div>
+                <div class="flex gap-3">
+                    <button onclick="window.print()" class="bg-electric text-white px-4 py-2 text-xs font-mono font-bold border-2 border-black shadow-pop-black hover:bg-black transition-all">
+                        <i class="fa-solid fa-print"></i> IMPRIMIR ZINE
+                    </button>
+                    <button onclick="toggleInfographicModal()" class="bg-black text-white px-4 py-2 text-xs font-mono font-bold border-2 border-black hover:bg-slate-800 transition-all">
+                        FECHAR
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white border-t-2 border-black py-12 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 font-mono text-xs">
+            
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 bg-electric text-white font-display font-black text-xl flex items-center justify-center border-2 border-white">
+                    ✦
+                </div>
+                <div>
+                    <div class="font-display font-bold text-sm uppercase">INFORMÁTICA PARA A INTERNET</div>
+                    <div class="text-slate-400">Mapa do Perfil Profissional ✦ 2026</div>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right text-slate-400 space-y-1">
+                <div>Estilo Visual: Cyber Editorial / Manga Graphic Pop / Y2K Zine</div>
+                <div class="text-white font-bold">Inspirado em Design Gráfico Experimental e Arte Pop</div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // Modal Toggle
+        function toggleInfographicModal() {
+            const modal = document.getElementById('infographicModal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('infographicModal');
+                if (!modal.classList.contains('hidden')) {
+                    modal.classList.add('hidden');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
